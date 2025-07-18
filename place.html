@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | USA | Jackson Tanner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>The United States of America</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <img srcset="images/heroSmall.webp 600w,
+            images/heroMedium.webp 1000w,
+            images/heroLarge.webp 1600w" sizes="(max-width: 768px) 100vw, 33rem" src="images/heroLarge.webp"
+                alt="USA Hero Image" loading="lazy" width="1600" height="800">
+        </section>
+        <section>
+            <h2>USA's Data</h2>
+            <p>Area</p>
+            <p>Population</p>
+            <p>Capital</p>
+        </section>
+        <section>
+            <h2>USA's Weather <img id="mobileWeatherIcon" src="images/weather.svg" alt="Weather Icon"></h2>
+            <p>Temperature</p>
+            <p>Conditions</p>
+            <p>Wind</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </section>
+        <section>
+            <h2>USA's Attractions</h2>
+            <p>Six flags Amusement Park</p>
+            <p>YellowStone National Park</p>
+            <p>Statue of Liberty</p>
+        </section>
+        <section>
+            <h2>USA's History</h2>
+            <p>Brief History text1</p>
+            <p>Brief History text2</p>
+            <p>Brief History text3</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>Jackson Tanner, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
