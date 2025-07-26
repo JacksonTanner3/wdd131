@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(0, 47, 0);
+    --secondary-color: rgb(1, 104, 1);
+    --accent-color: whitesmoke;
+    --text-color: rgb(0, 47, 0);
+    --light-text-color: whitesmoke;
+    --background-color: whitesmoke;
+
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-text-color);
+    position: relative;
+}
+
+nav {
+    display: none;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    padding: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    gap: 0;
+}
+
+nav.open a {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+main {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#temple-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+section {
+    background-color: var(--accent-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin: 0.2rem 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--light-text-color);
+    margin-top: .5rem;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--light-text-color);
+    cursor: pointer;
+    display: block;
+}

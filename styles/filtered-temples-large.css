@@ -1,0 +1,48 @@
+@media screen and (min-width: 32rem) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-content: unset;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-bottom: none;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    nav.open a {
+        margin-bottom: 0;
+    }
+
+    main {
+        max-width: 60rem;
+    }
+
+    #temple-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
