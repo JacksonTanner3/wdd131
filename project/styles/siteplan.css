@@ -1,0 +1,55 @@
+:root {
+    --primary-color: rgb(0, 47, 0);
+    --secondary-color: rgb(1, 104, 1);
+    --accent-color: whitesmoke;
+    --text-color: rgb(0, 47, 0);
+    --light-text-color: whitesmoke;
+    --background-color: whitesmoke;
+
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-text-color);
+    position: relative;
+}
+
+main {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--accent-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--light-text-color);
+    margin-top: .5rem;
+}
