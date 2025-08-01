@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #07642f;
+    --secondary-color: #0dad55;
+    --accent-color: #48ea33be;
+    --background-color: #f0ffe8;
+    --text-color: #1b4b30;
+    --light-text-color: #f3ffe8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    max-width: 40rem;
+    width: 90%;
+    margin: 1rem auto;
+    background-color: var(--light-text-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--text-color);
+}
+
+small {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.rating-container,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+}
+
+.rating-container input[type="radio"] {
+    display: none;
+}
+
+.rating-container label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.rating-container input[type="radio"]:checked+label {
+    color: gold;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin: 0;
+    order: 2;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    order: 1;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
