@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolley Motorcycles | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Jolley Motorcycles</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="bikes.html" class="nav-link">Bikes</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav hidden">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="bikes.html" class="nav-link">Bikes</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <img src="images/hero.jpg" alt="One of my personal favorite Motorcycles" class="hero-image">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Unleash Your Adventure</h1>
+                <p class="hero-subtitle">Find the perfect ride to fit your needs, whether you're a new rider or an
+                    experienced explorer.</p>
+                <a href="bikes.html" class="btn btn-primary">Explore Our Bikes</a>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="card-media">
+                <div class="card-text">
+                    <h2 class="card-title">New to Motorcycling?</h2>
+                    <p class="card-subtitle">Starting your journey on two wheels can be exciting, but it's important to
+                        start with a bike that's manageable and fun to ride. We specialize in helping new riders find
+                        their footing with a wide selection of beginner-friendly bikes and expert advice.</p>
+                    <p class="card-subtitle">Our team can guide you through the basics of bike types, safety gear, and
+                        local riding classes, ensuring a smooth and safe start to your riding life.</p>
+                    <a href="contact.html" class="btn">Ask Us Anything</a>
+                </div>
+                <div class="card-media-image">
+                    <img data-src="images/beginner.jpg" alt="The best beginner-friendly Motorcycle" class="card-image lazy">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="card-title text-center">Our Featured Rides</h2>
+            <div id="featured-bikes-container" class="grid-container">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Jolley Motorcycles. All rights reserved.</p>
+            <p><a href="references.html" class="footer-link">Citations and References</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
